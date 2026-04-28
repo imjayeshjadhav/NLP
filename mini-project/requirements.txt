@@ -1,0 +1,13 @@
+transformers>=4.35.0
+datasets>=2.14.0
+evaluate>=0.4.1
+rouge_score>=0.1.2
+torch>=2.0.0
+streamlit>=1.28.0
+matplotlib>=3.7.0
+pandas>=2.0.0
+numpy>=1.24.0
+sentencepiece>=0.1.99
+accelerate>=0.24.0
+nltk>=3.8.1
+absl-py>=2.0.0

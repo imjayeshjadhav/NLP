@@ -1,0 +1,8 @@
+[server]
+# Avoid walking every loaded module on reload. Hugging Face `transformers`
+# uses lazy submodule imports, and the default watcher triggers imports of
+# vision processors that need `torchvision` (not required by this project).
+fileWatcherType = "none"
+
+[logger]
+level = "info"

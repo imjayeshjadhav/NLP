@@ -1,0 +1,56 @@
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Mini-project: model weights & checkpoints (large binary files) ────────────
+mini-project/models/checkpoints/
+mini-project/models/t5-finetuned/
+mini-project/models/*.bin
+mini-project/models/*.safetensors
+
+# Keep the empty placeholder so the models/ folder is tracked
+!mini-project/models/.gitkeep
+
+# ── Mini-project: Hugging Face cache downloaded during inference ──────────────
+mini-project/.cache/
+mini-project/cache/
+
+# ── Mini-project: Streamlit runtime cache ────────────────────────────────────
+mini-project/.streamlit/cache/
+
+# ── Mini-project: venv (if someone creates it inside mini-project) ────────────
+mini-project/.venv/
+mini-project/venv/
+
+# ── Python bytecode & caches ─────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── Jupyter Notebook checkpoints ─────────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ── OS junk ───────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs & temp files ─────────────────────────────────────────────────────────
+*.log
+*.tmp
+*.temp
+
+# ── Torch / numpy / HuggingFace local caches ─────────────────────────────────
+*.pt
+*.pth
+*.ckpt
+# (keep trainer_state.json and training_args.bin out too — they're large/noisy)
+mini-project/models/**/optimizer.pt
+mini-project/models/**/rng_state.pth
+mini-project/models/**/scheduler.pt
+mini-project/models/**/training_args.bin
